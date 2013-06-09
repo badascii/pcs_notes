@@ -1,0 +1,47 @@
+Week 1 Notes - Ruby
+
+  Smell test for methods
+    -When only declaring and calling a method
+
+
+  Functional languages use immutable variables.
+
+
+  Order of operations
+  -"&&" and "||" have higher precedence than "and" and "or"
+    -"and" and "or" evaluate after "="
+
+  -"not" is evaluated right before "and" and "or"
+
+
+  Classes
+    -Factory that makes objects
+      -better description than "blueprint"
+
+    -Self refers to the current class or method (the scope)
+      -When outside of either (ie irb), it refers to the program being run (which is the current scope)
+
+
+  Return
+    -Exits the entire method when called inside a loop
+    -It exits the current scope
+
+
+  Integers
+    -.downto instance method
+
+
+  Recursion
+    -Analogy:
+      -If you are home, stop moving
+      -Else take one small step toward home
+      -Once home, speak the path
+
+    -Tail recursion
+      -can replace loops
+      -head is isolated (0 index) from tail (rest of array)
+      -head is then compared to the new head (new 0 index)
+
+    -Break the problem down to simplest possible form
+
+    -Aggregate results
