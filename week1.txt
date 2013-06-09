@@ -19,7 +19,11 @@ Week 1 Notes - Ruby
       -better description than "blueprint"
 
     -Self refers to the current class or method (the scope)
-      -When outside of either (ie irb), it refers to the program being run (which is the current scope)
+      -When outside of either (ie. irb), it refers to the program being run (which is the current scope)
+
+    -A rule of thumb for when to use class methods vs. instance methods
+      -Take a database for example
+        -Spawning multiple databases would generally be unwanted, so it works best as
 
 
   Return
@@ -42,6 +46,37 @@ Week 1 Notes - Ruby
       -head is isolated (0 index) from tail (rest of array)
       -head is then compared to the new head (new 0 index)
 
-    -Break the problem down to simplest possible form
+      given a = [1, 2, 3, 4]
 
-    -Aggregate results
+      method 1) head, *tail = a
+
+      method 2) head: a[0]
+                tail: a[1, -1]  # returns an array of everything but the [0] element
+
+
+    -Break the problem down to simplest possible form and aggregate results
+
+    -Fibonacci recursion
+      n = (n - 1) + (n - 2)
+        -where n[0] =  1 and n[1] = 1
+      def fib(n)
+        if n == 1 || n == 2
+          return 1
+        else
+          return fib(n - 1) + fib (n - 2)
+        end
+      end
+
+    -Real world examples of recursion:
+      -Showing which navbar item is active
+      -When a user has other users that belong to them
+
+
+  Algorithm Design
+    1) Requirements
+    2) Build toolbox
+    3) Whiteboard (physically draw logic on whiteboard/paper)
+    4) Test/spec
+    5) Write code (ideally the shortest step)
+    6) Refactor
+
