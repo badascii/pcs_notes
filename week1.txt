@@ -1,13 +1,7 @@
 Week 1 Notes - Ruby
 
-  Smell test for methods
-    -When only declaring and calling a method
+  Order of Operations
 
-
-  Functional languages use immutable variables.
-
-
-  Order of operations
   -"&&" and "||" have higher precedence than "and" and "or"
     -"and" and "or" evaluate after "="
 
@@ -15,6 +9,7 @@ Week 1 Notes - Ruby
 
 
   Classes
+
     -Factory that makes objects
       -better description than "blueprint"
 
@@ -23,23 +18,38 @@ Week 1 Notes - Ruby
 
     -A rule of thumb for when to use class methods vs. instance methods
       -Take a database for example
-        -Spawning multiple databases would generally be unwanted, so it works best as
+        -Spawning multiple databases would generally be unwanted, so it works
+         best as class method.
 
+    -A smell test for methods is only declaring and calling it. That type of
+     method is probably not suited to instances.
+    -Use instances for storing persistent data.
+
+    b = Beer.new
+    b.song
+
+    ^ Good example of when spawning instances is overkill.
 
   Return
-    -Exits the entire method when called inside a loop
-    -It exits the current scope
+
+    -Exits the entire method when called inside a loop.
+    -It exits the current scope.
 
 
   Integers
+
     -.downto instance method
 
 
+  Functional languages use immutable variables.
+
+
   Recursion
+
     -Analogy:
-      -If you are home, stop moving
-      -Else take one small step toward home
-      -Once home, speak the path
+      -If you are home, stop moving.
+      -Else take one small step toward home.
+      -Once home, speak the path.
 
     -Tail recursion
       -can replace loops
@@ -73,10 +83,56 @@ Week 1 Notes - Ruby
 
 
   Algorithm Design
+
     1) Requirements
     2) Build toolbox
     3) Whiteboard (physically draw logic on whiteboard/paper)
     4) Test/spec
     5) Write code (ideally the shortest step)
     6) Refactor
+
+
+  Modulo
+
+    -Picture a circle or wheel with the numbers 1 through the modulo number.
+    -Those numbers are the only numbers in the universe to that modulo
+    -It then returns the extra steps around the circle that do not make a
+      complete revolution (360 degrees).
+
+
+  each vs. map
+
+    each
+      -Does something with every element and does nothing with the returned
+       object in particular.
+    map
+      -Also does something with every element but instead returns an array with
+       the new elements inside.
+
+    Aliases
+
+      -map = collect
+      -reduce = inject
+
+
+  Sublime Snippets
+
+    -Tab Shortcuts
+      -$1, $2, $3, etc
+      -Pressing tab will sequentially jump between the points marked with a
+       shortcut.
+      -$(1:sometext) = text inside parentheses will autohighlight when tabbed to
+       for easy text insertion into elements.
+
+    -Shortcuts
+      -Apple D = multicursor
+      -Apple G = multiselection?
+
+
+  Arity
+    -The number of arguments accepted by a function (different from number given
+     to function).
+
+
+
 
