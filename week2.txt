@@ -82,6 +82,8 @@ Week 2 Notes - Ruby Testing
     -same as a module, except for location where they are stored
     -gems are usually packaged as modules
 
+    ruby-toolbox.com
+
 
   TDD
 
