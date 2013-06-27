@@ -133,6 +133,3 @@ Week 1 Notes - Ruby
     -The number of arguments accepted by a function (different from number given
      to function).
 
-
-
-

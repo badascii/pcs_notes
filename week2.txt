@@ -1,5 +1,42 @@
-Week 2 Notes
+Week 2 Notes - Ruby Testing
 
-Consistent Naming
+  Consistent Naming
 
-  -There are only two hard things in Computer Science: cache invalidation and naming things. -Phil Karlton
+    -There are only two hard things in Computer Science: cache invalidation and
+     naming things. -Phil Karlton
+
+  Debuggers
+
+    debugger:
+    1) require 'debugger'
+    2) add the word debugger to a problem area of the code
+    3) the logic will freeze at that point
+    4) the code can then be stepped through in rdb
+    5) commands: step, next, continue
+
+    vlad:
+    -debugs a frozen program
+
+    pry:
+    -fully functional irb
+    -cannot be stepped through
+
+  -puts vs. p
+  puts generally applies to_s
+  p prints the result of inspecting the object
+
+  Testing
+
+    KPI: Key Performance Indicators
+      -most important sections of code where tests should be focused
+      -critical parts should be tested no matter whtat
+
+  What to Test
+
+    -every significant input and output
+    -any complicated bits
+    -things coworkers can break
+    -things coworkers won't test manually
+    -anything unreliable (ie. APIs and anything network based)
+
+  How to Test
