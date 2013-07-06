@@ -40,3 +40,14 @@ Week 5 Notes - Rails and Sinatra
 
 
   Presenters/Decorators
+
+    -often an individual one is used per model
+    -can turn data into JSON
+    -make views more secure
+
+    Presentsers
+      -allow us to see only data we need
+
+    Decorators
+      -style data for us
+      -ie. add parens and dashes to phone numbers
