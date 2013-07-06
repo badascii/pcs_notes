@@ -17,10 +17,26 @@ Week 5 Notes - Rails and Sinatra
       -client doesn't have to load Rails to access these assets
       -Rails takes ~500ms to load SCSS, Coffeescript, etc.
 
+
   RESTful
 
     -use HTTP (only GET/POST)
     -use URL to clearly pass information ie. params
     -send CRUD using these restraints
 
+
   Rails Views
+
+    -Rails has templates, not real views
+    -traditional views have much more power than what Rails offers
+    -in production, a professional app will pass the Rails views through a
+     decorator/presenter
+    -Rails is Mr. T
+      -model/router/template
+    -assets never get to have acces to actual data
+    -never use ERB in SCSS!
+      -it prevents the precompiling of assets if any logic has to be processed
+       by the stylesheet
+
+
+  Presenters/Decorators
