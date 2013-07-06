@@ -2,4 +2,25 @@ Week 5 Notes - Rails and Sinatra
 
   Sinatra
 
-    -
+    URL.com/users/:user
+
+    ^ passing params in URL
+
+
+  MVC
+
+    -Dispatcher
+      -located outside of Rails
+      -can serve assets such as: images
+                                 JavaScript/CoffeeScript files
+                                 stylesheets
+      -client doesn't have to load Rails to access these assets
+      -Rails takes ~500ms to load SCSS, Coffeescript, etc.
+
+  RESTful
+
+    -use HTTP (only GET/POST)
+    -use URL to clearly pass information ie. params
+    -send CRUD using these restraints
+
+  Rails Views
