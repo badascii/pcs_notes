@@ -45,7 +45,7 @@ Week 5 Notes - Rails and Sinatra
     -can turn data into JSON
     -make views more secure
 
-    Presentsers
+    Presenters
       -allow us to see only data we need
 
     Decorators
