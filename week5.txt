@@ -31,7 +31,7 @@ Week 5 Notes - Rails and Sinatra
     -traditional views have much more power than what Rails offers
     -in production, a professional app will pass the Rails views through a
      decorator/presenter
-    -Rails is Mr. T
+    -Rails is better thought of as Mr. T
       -model/router/template
     -assets never get to have acces to actual data
     -never use ERB in SCSS!
@@ -50,4 +50,18 @@ Week 5 Notes - Rails and Sinatra
 
     Decorators
       -style data for us
-      -ie. add parens and dashes to phone numbers
+      -some examples:
+        -add parens and dashes to phone numbers
+        -cut floating point number down to two decimals to represent money
+
+
+  Rails Models and Databases
+
+    -some Rails models may not interact with the database at all. They may, for
+     example, handle API calls or process data held in the lib folder
+    -databases are super fast, so we want to rely on them when accessing data,
+     which is their specialty
+    -models are all about data persistence
+
+
+  Rails Testing
