@@ -71,3 +71,5 @@ Week 5 Notes - Rails and Sinatra
     -views often contain a lot of bugs, but the tests for them are extremely
      unreliable. Integration tests are better because they use actual controller
      data
+    -controllers and views should be so stupid that nothing breaks, but the
+     interaction between the two will break often
