@@ -65,3 +65,9 @@ Week 5 Notes - Rails and Sinatra
 
 
   Rails Testing
+
+    -controller specs are often redundant
+    -views get tested through integration tests
+    -views often contain a lot of bugs, but the tests for them are extremely
+     unreliable. Integration tests are better because they use actual controller
+     data
