@@ -49,4 +49,17 @@ Week 6 Notes - Rails Cont.
       -Rails uses its magic to make instance variables available in the view
        files
       -besides their availability in Rails views, they act identical to Ruby
-       instance varialbes
+       instance variables
+
+    def set_scrabble
+      @scrabble = scrabble.find(params[:id])
+    end
+
+    -set_scrabbled can then be called to access @scrabble in other methods
+    -this method is the same as using a before filter/before action, which
+     calls the method passed as an argument
+    -a good rule of thumb is that if an instance variable is instantiated more
+     than two times in a controller, set_method should be used
+
+    -redirect_to @scrabble can be used instead of the standard Rails
+     controller/method argument
