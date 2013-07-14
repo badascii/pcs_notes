@@ -63,3 +63,22 @@ Week 6 Notes - Rails Cont.
 
     -redirect_to @scrabble can be used instead of the standard Rails
      controller/method argument
+
+    -form_for can intelligently know what form to render
+    -if @scrabble has an id, it knows to render an edit form
+    -if @scrabble does not have an id, it will render a form to create a new
+     entry
+
+    -respond_with
+      -added as a single line at the top of a controller
+      -responds to JSON, HTML, XML, whatever
+      -seldom used, but offers powerful functionality
+
+
+  Strong Params
+
+    -params are no longer a hash
+    -in Rails 4 they are an instance of ActionController::Params
+    -only way to turn these new params into a hash is with the .permit() method
+    -similarly, views no longer render standard strings
+    -instead they render safe strings, which are more secure
