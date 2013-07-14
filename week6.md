@@ -41,4 +41,12 @@ Week 6 Notes - Rails Cont.
   Controllers
 
     -methods
-      -
+      -will render an HTML file with the same name as it unless it
+       explicitly returned or yielded
+
+    -instance variables
+      -act weird and different in Rails (vs Ruby)
+      -Rails uses its magic to make instance variables available in the view
+       files
+      -besides their availability in Rails views, they act identical to Ruby
+       instance varialbes
