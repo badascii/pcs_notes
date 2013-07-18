@@ -80,5 +80,5 @@ Week 6 Notes - Rails Cont.
     -params are no longer a hash
     -in Rails 4 they are an instance of ActionController::Params
     -only way to turn these new params into a hash is with the .permit() method
-    -similarly, views no longer render standard strings
-    -instead they render safe strings, which are more secure
+    -similarly, views no longer render standard strings and instead render safe
+     strings, which are more secure
