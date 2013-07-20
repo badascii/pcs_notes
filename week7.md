@@ -17,3 +17,28 @@ Week 7 Notes - Rails and Databases
        using it as the default branch when cloning
       -"github" could easily replace "origin" as the default branch and may
        in the near future
+
+      merge multiple branches:
+
+        -git checkout master
+        -git merge all
+
+        -a branch is simply a pointer
+        -it it points to a different point in the code's history
+
+
+  Git Worlflow
+  ------------
+
+    -git checkout master
+    -git checkout
+    -
+
+Open Source Contributions
+-------------------------
+
+  -fork the repo
+  -make a new branch
+  -make a pull request
+
+
