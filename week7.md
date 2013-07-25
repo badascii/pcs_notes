@@ -50,8 +50,9 @@ Week 7 Notes - Rails and Databases
     -make a pull request
 
 
-Types of Databases
+Databases
 ------------------
+  gem install rails_12factor
 
   -MySQL
 
@@ -72,5 +73,21 @@ Types of Databases
 Foreign Keys
 ------------
 
+  -foreign key constraints allow for specifying restrictions such as not being
+   able to make a Tweet if there isn't an associated user
 
+
+Heroku
+------
+
+  -useful commands:
+
+      heroku logs -t
+
+      heroku scale web 12
+        -will increase CPU host count by number passed (12 in this case)
+
+      gem install taps
+        -allows for using the commands heroku db:push and db:pull to
+         respectively set and get the Heroku database
 
